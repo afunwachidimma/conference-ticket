@@ -93,11 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const reader = new FileReader();
             reader.onload = (event) => {
                 localStorage.setItem("confAvatar", event.target.result);
-                window.location.href = "../html/index2.html";
+                window.location.href = "index.html";
             };
             reader.readAsDataURL(file);
         } else {
-            window.location.href = "../html/index2.html";
+            window.location.href = "index.html";
         }
     });
 });
